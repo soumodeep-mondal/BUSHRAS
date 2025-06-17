@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bushra's Bag</title>
+     <!-------------------fonts------------------------------>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&family=Baskervville:ital@0;1&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Fjalla+One&family=Gotu&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&family=Baskervville:ital@0;1&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Fjalla+One&family=Gotu&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!---------------------------------------------------------------->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/responsive.css">
+     <link rel="stylesheet" href="css/style.css">
+ 
+      <!---------------for owl------------------->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!--------------------AOS---------------------->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+</head>
+<body id="colour">
+   
+  <!-----------------------------top--------------------------------->
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark my-nav">
+     <div class="container-fluid">
+     <a class="navbar-brand respon-logo" href="index.html"><img src="images/logo.png" alt="image" class="img-fluid"></a>
+     <!-- Toggler/collapsibe Button -->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+     <div class="collapse navbar-collapse" id="main_nav">
+       <ul class="navbar-nav my-items">
+         <li class="nav-item active"> <a class="nav-link" href="index.html">Home </a> </li>
+         <li class="nav-item"><a class="nav-link" href="about.html" style="margin-right: 50px;"> About </a></li>
+         <li class="nav-item desk_logo">         
+           <a class="navbar-brand my-logo" href="index.html"><img src="images/logo1.png" alt="image"></a>
+          </li>
+         <li class="nav-item dropdown responsive-spl" id="myDropdown">
+           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="margin-left: 50px;">products </a>
+           <ul class="dropdown-menu">
+             <li> <a class="dropdown-item" href="jute.html">Jute Bags </a></li>
+             <li> <a class="dropdown-item" href="non_shopping.html">Non-woven bags </a></li>          
+             <li> <a class="dropdown-item" href="dust_cover.html">Dust cover bags </a></li>
+             <li><a class="dropdown-item" href="juco.html"> Juco bags </a></li>
+             <li><a class="dropdown-item" href="cotton.html">cotton bags </a></li>
+             <li><a class="dropdown-item" href="plant.html">plant grow bags </a></li>
+           </ul>
+         </li>
+         <li class="nav-item"><a class="nav-link" href="contact.html">Contact </a></li>
+       </ul>
+     </div>
+     <!-- navbar-collapse.// -->
+     </div>
+     <!-- container-fluid.// -->
+     </nav>
+     </section>
+<!-------------------------banner------------------------------------>
+<section class="abt-bg">
+  <div class="container">
+    <div class="abt-items">
+      <a href="index.html">Home &nbsp;/&nbsp;</a>
+      <a href="about.html">about</a>
+    </div>
+  </div>
+</section>
+<!-------------------about---------------------->
+<section class="mt-5">
+  <div class="container">
+    <h1 class="line-3" style="border-bottom: 1px solid #ccc;margin-bottom: 10px;padding-bottom: 10px;">We are Leading, Exporter & Wholesaler of Dust Bags, Cloth Dust Bags, Shopping Bags, Non Woven Bags and Garment Bags in India</h1>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="page-abt">
+          <p class="para-1"><b> Bushr's originated in 2008 </b> for manufacturing various type of Eco-friendly jute bags and cotton bags like Beach Bags, Drawstring Bags, Grow Bags, Non-Woven Bags, Official Bags, Promotional Bags, Shopping Bags, Toy Bags, Wine Bags and much more as per every customer need.
+             Taking pride in our work, we started our export business from the year  2008.</p>
+          <p class="para-1">With over 16 years of manufacturing operations, we supply Jute, Cotton, and Non-Woven bags to many jute bag 
+            exporters in India and world-wide through many corporate sectors.<b> Our products are exported to the overseas markets of USA, UK, UAE, Germany, United Kingdom, Canada, Spain, France, Netherlands,Thailand, Ireland, Australia, New Zealand, Denmark, Singapore, 
+            Russia, South Africa, Italy & Japan and many other countries across the Globe</b> </p>  
+          <p class="para-1"> Our rate is much lower than any other export house because our overhead expenditure is marginal as the entire manufacturing process are being carried on under one roof.</p>  
+        </div>
+      </div>
+    </div>
+    <h4 class="line-2" style="border-bottom: 1px solid #ccc;margin-bottom: 10px;padding-bottom: 10px;">Infrastructure</h4>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="page-abt">
+          <p class="para-1">It has a manufacturing unit which is equipped with the state-of-the-art technology outskirts of Kolkata (5 KM from NSCBI Airport, Dum Dum), West Bengal, India. Our Skilled designers and diligent employees manufacturing modern and trendy export quality jute bags with the help of latest machines and tools. The factory is equipped with state-of-the-art Cutting, 
+            printing, stitching, checking, packing under one roof for the manufacture of jute bags. </p>
+          <p class="para-1">The factory is equipped with state-of-the-art cutting, printing, stitching, checking, and packing-quality 
+            control checkpoints in one facility.</p> 
+        </div>
+      </div>
+    </div>
+    <h4 class="line-2" style="border-bottom: 1px solid #ccc;margin-bottom: 10px;padding-bottom: 10px;">Quality</h4>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="page-abt">
+          <p class="para-1">We procure premium quality raw materials from renowned and trustworthy suppliers of the industry, and test those thoroughly before using it in our manufacturing unit. Our experienced Quality Control Team conducts strict quality checking of each product on the parameters of as strength, design, pattern,color, size, etc. Once all the parameters are fully met with, then only are the products marked as Finished & Packaged. We manufacture and export best quality jute bags and cotton bags in India.</p>
+          <p class="para-1"> We check each product very carefully to maintain the product quality. No one can beat our stitching quality.  </p> 
+        </div>
+      </div>
+    </div>
+    <h4 class="line-2" style="border-bottom: 1px solid #ccc;margin-bottom: 10px;padding-bottom: 10px;">Social responsibility</h4>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="page-abt">
+          <p class="para-1">We promote responsible farming practices, minimize waste generation, and invest in eco-friendly production processes.</p>
+          <p class="para-1">Our company also provides income to local families by allowing women to take part in several activities after 
+            providing proper training. We prioritize the welfare of our workers by ensuring fair wages, safe working conditions, and access to healthcare.  </p> 
+        
+        </div>
+      </div>
+    </div>
+    <h4 class="line-2" >Our Certificates</h4>
+  </div>
+</section> 
+<!----------------footer------------------------>
+<section class="footer">
+  <div class="container">
+    <div class="row d-md-flex justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="footer-details">
+         <!--a href="#" class="foot-logo"><img src="images/logo.png" alt="image"></a--->         
+         <p class="foot-para">We are one of the promising manufacturers and suppliers of an exclusive range of Dust Bags, 
+          Cloth Dust Bags, Shopping Bags, Non Woven Bags and Garment Bags.</p>          
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12">
+        <h3 class="foot-small">links</h3>
+        <ul class="foot-items">
+          <li><a href="index.html"><i class="bi bi-chevron-double-right"></i> <span>Home </span></a></li>
+          <li><a href="about.html"><i class="bi bi-chevron-double-right"></i> <span>About us </span></a></li>         
+          <li><a href="contact.html"><i class="bi bi-chevron-double-right"></i> <span>Contact us </span></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12">
+        <h3 class="foot-small">products</h3>
+        <ul class="foot-items">
+          <li><a href="jute.html"><i class="bi bi-chevron-double-right"></i> <span>Jute bags</span></a></li>
+          <li><a href="juco.html"><i class="bi bi-chevron-double-right"></i> <span>Juco bags</span></a></li>         
+          <li><a href="cotton.html"><i class="bi bi-chevron-double-right"></i> <span>Cotton bags</span></a></li>
+          <li><a href="non_shopping.html"><i class="bi bi-chevron-double-right"></i>Nonwoven shopping bags <span></span></a></li>
+          <li><a href="dust_cover.html"><i class="bi bi-chevron-double-right"></i>Dust cover bags <span></span></a></li>
+          <li><a href="plant.html"><i class="bi bi-chevron-double-right"></i>plant grow bags <span></span></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <h3 class="foot-small">Reach us</h3>
+        <ul class="foot-items">
+          <li><a href="#"><i class="bi bi-geo-alt-fill"></i>
+            <span class="">6/13, Nilmoni Haider Lane, Kolkata-700013</span></a>
+          </li>
+          <li><a href="#"><i class="bi bi-whatsapp"></i>
+            <span class=""> 9903824482/7003099523 </span> </a>
+         </li>
+         <li><a href="javascript:void(0)"><i class="bi bi-telephone"></i>
+          <span>033-4600-9036</span></a></li>        
+        
+          <li><a href="#" class=""><i class="bi bi-envelope-open-fill"></i>
+            <span>bushrabagsworld187@gmail.com</span> </a>
+         </li>        
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="rights"> &copy; 2023. All rights reserved. Designed by <span> Soumodeep Mondal </span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>  
+  <script>
+  AOS.init();
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+//abut-owl
+$('#owl1').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  dots:false,  
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:4
+      }
+  }
+})
+
+//dropdown multilevel
+document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  //close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+</script>
+
+
+  
+
+
+
+</body>
+</html>
